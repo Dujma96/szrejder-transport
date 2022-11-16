@@ -17,10 +17,10 @@ const buttonStyle = css`
   margin: 5px;
   :hover {
     background-color: #2584dc;
-    color: #000;
     cursor: pointer;
   }
   padding: 10px;
+  font-family: initial;
 `;
 
 const NavigationButton = (props: INavigationButton) => {

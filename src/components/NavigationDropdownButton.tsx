@@ -7,19 +7,20 @@ const dropbtn = css`
   justify-content: center;
   align-self: center;
   text-align: center;
-
   :hover {
     background-color: #2584dc;
-    color: #000;
     cursor: pointer;
   }
   padding: 10px;
+  font-family: initial;
 `;
 
 const dropdown = css`
   position: relative;
   display: inline-block;
   place-self: center;
+  color: "#fff";
+  font-family: initial;
 `;
 
 const dorpdownHovered = css`
@@ -27,27 +28,35 @@ const dorpdownHovered = css`
 `;
 
 const dropdownContent = css`
+  width: 400px;
   position: absolute;
   background-color: #2584dc;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 3;
   display: none;
+  color: "#fff";
 `;
 
 const hoveredButton = css`
   background-color: #2584dc;
-  color: #000;
 `;
 
 const dropdownLink = css`
-  color: black;
   padding: 12px 16px;
   text-decoration: none;
+  color: #fff;
   display: block;
   &:hover {
-    background-color: #1d37a2;
+    background-color: #338de2;
+    color: #fff;
   }
+`;
+const imageStyle = css`
+  width: 20px;
+  margin-top: 10px;
+  color: #fff;
+  position: absolute;
+  top: 0px;
 `;
 interface IDropdownButton {
   buttonText: string;
@@ -69,47 +78,23 @@ const NavigationDropdownButton = (props: IDropdownButton) => {
         onMouseEnter={() => setIsHovered(true)}
       >
         {buttonText}
-        {isHovered ? (
-          <img
-            src={require("../pictures/arrow_down.png")}
-            alt=""
-            style={{
-              width: "20px",
-              marginTop: "10px",
-              color: "#fff",
-              position: "absolute",
-              top: "0px",
-            }}
-          />
-        ) : (
-          <img
-            src={require("../pictures/arrow-down-white.png")}
-            alt=""
-            style={{
-              width: "20px",
-              marginTop: "10px",
-              color: "#fff",
-              position: "absolute",
-              top: "0px",
-            }}
-          />
-        )}
+
+        <img
+          src={require("../pictures/arrow-down-white.png")}
+          alt=""
+          className={imageStyle}
+        />
       </div>
       <div className={cx([dropdownContent, isHovered && dorpdownHovered])}>
         {links.map((subcategory) => {
           return (
-            <a href={subcategory.destination} className={dropdownLink}>
-              {subcategory.text}
-            </a>
+            //change span or a when it will be functionall
+            // <a href={subcategory.destination} className={dropdownLink}>
+            <span className={dropdownLink}>{subcategory.text}</span>
+
+            // </a>
           );
         })}
-
-        {/* <a href="link23" className={dropdownLink}>
-          Link 2
-        </a>
-        <a href="link4" className={dropdownLink}>
-          Link 3
-        </a> */}
       </div>
     </div>
   );

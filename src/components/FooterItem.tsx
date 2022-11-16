@@ -4,22 +4,25 @@ import { IconType } from "react-icons";
 
 const textStyle = css`
   color: #fff;
+  font-family: initial;
 `;
 const innerSectionContainer = css`
   display: flex;
   flex-direction: row;
+  justify-content: center;
 `;
 
 const iconContainer = css`
-  flex-basis: 40%;
   text-align-last: right;
   padding-right: 30px;
   align-self: center;
 `;
 
 const infoStyle = css`
-  flex-basis: 60%;
   text-align-last: left;
+`;
+const iconStyle = css`
+  color: #fff;
 `;
 
 interface IFooterItem {
@@ -31,7 +34,7 @@ export const FooterItem: React.FC<IFooterItem> = ({ text, Icon }) => {
   return (
     <div className={innerSectionContainer}>
       <div className={iconContainer}>
-        <Icon style={{ color: "#fff" }} size="30px" />
+        <Icon className={iconStyle} size="30px" />
       </div>
       <div className={infoStyle}>
         <p className={textStyle}> {text}</p>

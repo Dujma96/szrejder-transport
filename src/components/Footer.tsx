@@ -10,6 +10,12 @@ const footerContainer = css`
   flex-direction: row;
   display: flex;
   place-content: space-evenly;
+  @media (max-width: 615px) {
+    flex-direction: column;
+  }
+  @media (min-width: 616px) {
+    flex-direction: row;
+  }
 `;
 const sectionContainer = css`
   max-height: 100%;
@@ -19,22 +25,26 @@ const sectionContainer = css`
 
 const textStyle = css`
   color: #fff;
+  font-family: initial;
 `;
 const innerSectionContainer = css`
   display: flex;
   flex-direction: row;
+  justify-content: center;
 `;
 
 const iconContainer = css`
-  flex-basis: 40%;
   text-align-last: right;
   padding-right: 30px;
   align-self: center;
 `;
 
 const infoStyle = css`
-  flex-basis: 60%;
   text-align-last: left;
+`;
+
+const iconStyle = css`
+  color: #fff;
 `;
 
 const Footer = () => {
@@ -46,7 +56,7 @@ const Footer = () => {
         </div>
         <div className={innerSectionContainer}>
           <div className={iconContainer}>
-            <IoLocationOutline style={{ color: "#fff" }} size="30px" />
+            <IoLocationOutline className={iconStyle} size="30px" />
           </div>
           <div className={infoStyle}>
             <p className={textStyle}>
@@ -60,8 +70,8 @@ const Footer = () => {
         <h1 className={textStyle}>Kontakt</h1>
 
         <FooterItem Icon={AiOutlinePhone} text="+48 606924391" />
-        <FooterItem Icon={AiOutlinePhone} text="+48 606924391" />
-        <FooterItem Icon={AiOutlinePhone} text="+48 606924391" />
+        <FooterItem Icon={AiOutlinePhone} text="+48 664417855" />
+        <FooterItem Icon={AiOutlinePhone} text="+48 536123411" />
       </div>
       <div className={sectionContainer}>
         <h1 className={textStyle}>E-mail</h1>
