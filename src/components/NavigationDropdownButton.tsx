@@ -86,11 +86,13 @@ const NavigationDropdownButton = (props: IDropdownButton) => {
         />
       </div>
       <div className={cx([dropdownContent, isHovered && dorpdownHovered])}>
-        {links.map((subcategory) => {
+        {links.map((subcategory, index) => {
           return (
             //change span or a when it will be functionall
             // <a href={subcategory.destination} className={dropdownLink}>
-            <span className={dropdownLink}>{subcategory.text}</span>
+            <span className={dropdownLink} key={index}>
+              {subcategory.text}
+            </span>
 
             // </a>
           );

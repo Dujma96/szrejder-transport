@@ -143,7 +143,7 @@ const flota = () => {
             <div className={textHalfPageStyle}>
               <p>
                 Dysponujemy flotą 25 ciągników siodłowych, 35 naczep oraz dwóch
-                busów. Obecnie dostawami pojazdów ciężarowych są firmy takie
+                busów. Obecnie dostawcami pojazdów ciężarowych są firmy takie
                 jak: Mercedes, IVECO oraz DAF.
               </p>
             </div>
@@ -177,7 +177,7 @@ const flota = () => {
         <div className={cardContainerStyle}>
           <FlotaCard
             Icon={TbGps}
-            text="Zestawy transportowe wyposażone są w systemy oparte na komunikacji GPS, które pozwalają na monitorowanie zarówno pojazdu, jak i ładunku oraz sprawdzanie i analizę ich czasu pracy kierowców. Na prośbę klientów, udostępniamy tranzyt danej trasy."
+            text="Zestawy transportowe wyposażone są w systemy oparte na komunikacji GPS, które pozwalają na monitorowanie zarówno pojazdu, jak i ładunku oraz sprawdzanie i analizę czasu pracy kierowców. Na prośbę klientów, udostępniamy tranzyt danej trasy."
           />
           <FlotaCard
             Icon={BsTruck}

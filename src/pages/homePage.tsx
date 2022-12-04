@@ -73,6 +73,7 @@ const cardContainerStyle = css`
   }
   justify-content: center;
   @media (max-width: 615px) {
+    align-items: center;
     flex-flow: column;
   }
 `;

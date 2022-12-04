@@ -72,8 +72,8 @@ const kariera = () => {
             <p className={driversTextStyle}>
               Zatrudnimy kierowców w transporcie międzynarodowym. Można u nas
               nabyć nowych umiejętności i doświadczenia. Aktualnie poszukujemy
-              kierowców na kierunki na pojedyncze i podwójne obsady. Preferowany
-              tryb pracy- co drugi weekend wolny.
+              kierowców na pojedyncze i podwójne obsady. Preferowany tryb pracy-
+              co drugi weekend wolny.
             </p>
             <p className={companyLoactionTextStyle}>
               Baza transportowa firmy znajduje się w Sucharzewie (województwo
@@ -92,9 +92,9 @@ const kariera = () => {
           <h1 className={headerTextStyle}>Oferujemy:</h1>
           <KarieraListItem text="atrakcyjne warunki zatrudnienia (umowa o pracę)," />
           <KarieraListItem text="możliwość zawarcia dodatkowego ubezpieczenia grupowego," />
-          <KarieraListItem text="pracę na nowoczesnym taborze oraz auta przypisane do kierowców" />
+          <KarieraListItem text="pracę na nowoczesnym taborze oraz auta przypisane do kierowców," />
           <KarieraListItem text="szkolenia ADR i SPX," />
-          <KarieraListItem text="ycia nowych kompetencji," />
+          <KarieraListItem text="nabycie nowych kompetencji." />
 
           <h1 className={headerTextStyle}>Wymagania:</h1>
           <KarieraListItem text="uprawnienia do wykonywania zawodu (kat. C+E)," />

@@ -63,10 +63,10 @@ export const TopNavigation = () => {
               text: "ONas",
               link: "/o-nas",
             },
-            {
-              text: "Uslugi",
-              link: "/uslugi",
-            },
+            // {
+            //   text: "Uslugi",
+            //   link: "/uslugi",
+            // },
             {
               text: "Kariera",
               link: "/kariera",

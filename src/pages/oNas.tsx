@@ -42,18 +42,18 @@ const oNas = () => {
           rozpoczęliśmy działalność na arenie międzynarodowej. <br /> <br />
           Obecnie w naszej działalności dominuje tranzyt poczty lotniczej na
           terenie
-          <span className={countryNameStyle}>Polski</span> ,
-          <span className={countryNameStyle}>Niemiec</span> ,
-          <span className={countryNameStyle}>Szwecji</span> ,
-          <span className={countryNameStyle}>Danii</span> ,
-          <span className={countryNameStyle}>Holandii</span> ,
-          <span className={countryNameStyle}>Belgii</span> ,
-          <span className={countryNameStyle}>Litwy</span> ,
-          <span className={countryNameStyle}>Estonii </span>
-          oraz <span className={countryNameStyle}>Czech</span>. Współpracujemy
-          też z wieloma innymi organizacjami na terenie tych państw. Wyróżniamy
-          się nowoczesną flotą oraz wysoko wykwalifikowaną kadrą pracowników,
-          która zawsze służy pomocą 24/7.
+          <span className={countryNameStyle}>{" Polski"}</span>,
+          <span className={countryNameStyle}>{" Niemiec"}</span>,
+          <span className={countryNameStyle}>{" Szwecji"}</span>,
+          <span className={countryNameStyle}>{" Danii"}</span>,
+          <span className={countryNameStyle}>{" Holandii"}</span>,
+          <span className={countryNameStyle}>{" Belgii"}</span>,
+          <span className={countryNameStyle}>{" Litwy"}</span>,
+          <span className={countryNameStyle}>{" Estonii"} </span>
+          oraz <span className={countryNameStyle}>{" Czech"}</span>.
+          Współpracujemy też z wieloma innymi organizacjami na terenie tych
+          państw. Wyróżniamy się nowoczesną flotą oraz wysoko wykwalifikowaną
+          kadrą pracowników, która zawsze służy pomocą 24/7.
         </p>
         <img
           src={require("../pictures/ONasMapa.png")}
