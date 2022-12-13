@@ -28,11 +28,16 @@ const iconStyle = css`
 interface IFooterItem {
   text: string;
   Icon: IconType;
+  clickAction?: () => void;
 }
 
-export const FooterItem: React.FC<IFooterItem> = ({ text, Icon }) => {
+export const FooterItem: React.FC<IFooterItem> = ({
+  text,
+  Icon,
+  clickAction,
+}) => {
   return (
-    <div className={innerSectionContainer}>
+    <div className={innerSectionContainer} onClick={clickAction}>
       <div className={iconContainer}>
         <Icon className={iconStyle} size="30px" />
       </div>

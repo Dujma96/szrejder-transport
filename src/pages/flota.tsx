@@ -102,6 +102,7 @@ const videoStyle = css`
     flex-direction: column;
     align-items: center;
     width: 90%;
+    place-self: center;
   }
 `;
 
@@ -119,6 +120,7 @@ const videoContainerStyle = css`
   justify-content: center;
   padding: 30px;
   @media (max-width: 900px) {
+    text-align: center;
     flex-direction: column;
     padding: 0px;
   }

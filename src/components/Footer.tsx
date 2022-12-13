@@ -4,6 +4,8 @@ import { IoLocationOutline } from "react-icons/io5";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { FooterItem } from "./FooterItem";
 const footerContainer = css`
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
   min-height: 200px;
   background-color: #000;
@@ -69,13 +71,31 @@ const Footer = () => {
       <div className={sectionContainer}>
         <h1 className={textStyle}>Kontakt</h1>
 
-        <FooterItem Icon={AiOutlinePhone} text="+48 606924391" />
-        <FooterItem Icon={AiOutlinePhone} text="+48 664417855" />
-        <FooterItem Icon={AiOutlinePhone} text="+48 536123411" />
+        <FooterItem
+          Icon={AiOutlinePhone}
+          text="+48 606924391"
+          clickAction={() => window.open("tel:+48 606924391")}
+        />
+        <FooterItem
+          Icon={AiOutlinePhone}
+          text="+48 664417855"
+          clickAction={() => window.open("tel:+48 664417855")}
+        />
+        <FooterItem
+          Icon={AiOutlinePhone}
+          text="+48 536123411"
+          clickAction={() => window.open("tel:+48 536123411")}
+        />
       </div>
       <div className={sectionContainer}>
         <h1 className={textStyle}>E-mail</h1>
-        <FooterItem Icon={AiOutlineMail} text="biuro@szrejder.pl" />
+        <FooterItem
+          Icon={AiOutlineMail}
+          text="biuro@szrejder.pl"
+          clickAction={() => {
+            window.location.href = "mailto:biuro@szrejder.pl";
+          }}
+        />
       </div>
     </div>
   );

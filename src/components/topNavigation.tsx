@@ -63,6 +63,10 @@ export const TopNavigation = () => {
               text: "ONas",
               link: "/o-nas",
             },
+            {
+              text: "Flota",
+              link: "/flota",
+            },
             // {
             //   text: "Uslugi",
             //   link: "/uslugi",
